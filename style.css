@@ -9,6 +9,8 @@ body{
     --slantedtext:"Tektur", sans-serif;
     --primarycolor: #258cbf;
     --secondarycolor: white;
+    --maintransition: all 0.3s ease-in-out;
+    --letterspacing: 0.5rem;
 }
 
 *{
@@ -62,8 +64,51 @@ li a:hover{
     color: #258cbf;
 }
 
+/* header */
 
 #container{
     min-height: 100vh;
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(images/background1.jpg) center/cover no-repeat fixed;
+    position: relative;
+}
+.banner{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    text-align: center;
+    letter-spacing: var(--letterspacing);
+    text-transform: uppercase;
+}
+.hone{
+    color: var(--primarycolor);
+    font-size: 3.5rem;
+}
+.htwo{
+    color: var(--secondarycolor);
+    font-size: 2.5rem;
+}
+.hthree{
+    color: var(--secondarycolor);
+    font-size: 1.8rem;
+}
+.main-btn, .banner-btn{
+    margin-top: 2rem;
+    display: inline-block;
+    background: var(--primarycolor);
+    letter-spacing: var(--letterspacing);
+    padding: 0.8rem 1.2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    outline: 0.2rem solid var(--primarycolor);
+    outline-offset: 4px;
+    cursor: pointer;
+    transition: var(--maintransition);
+}
+.main-btn:hover,.banner-btn:hover{
+    color: var(--primarycolor);
+    background: var(--secondarycolor);
+    opacity: 0.7;
+}
+.banner-btn{
+    padding: 1.5rem 1.8rem;
 }
