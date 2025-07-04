@@ -1,3 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap');
+body{
+    font-family: "Share Tech", sans-serif;
+        font-weight: 400;
+        font-style: normal;  
+}
+:root{
+    --slantedtext:"Tektur", sans-serif;
+    --primarycolor: #258cbf;
+    --secondarycolor: white;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -11,9 +24,9 @@ ul{
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #258cbf;
 }
-li{
+li {
     float: left;
 }
 li a{
@@ -26,11 +39,29 @@ li a{
 li a:hover{
     background-color: #111;
 }
-input{
+
+
+.search{
+    position: relative;
+    width: 260px;
     float: right;
-    padding: 12px;
+}
+.search input {
+    width: 100%;
+    padding: 10px 10px 17px 35px;
+    border: 1px solid #258cbf;
+    border-radius: 5px;
     font-size: 15px;
 }
+
+.search .fa-search {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #258cbf;
+}
+
 
 #container{
     min-height: 100vh;
