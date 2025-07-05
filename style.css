@@ -112,3 +112,10 @@ li a:hover{
 .banner-btn{
     padding: 1.5rem 1.8rem;
 }
+.divider{
+    height: 8px;
+    background: linear-gradient(to left,
+    var(--primarycolor),
+    var(--secondarycolor),
+    var(--primarycolor));
+}
