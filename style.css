@@ -63,6 +63,10 @@ li a:hover{
     transform: translateY(-50%);
     color: #258cbf;
 }
+p{
+    color: var(--secondarycolor);
+    letter-spacing: 0.2rem;
+}
 
 /* header */
 
@@ -118,4 +122,50 @@ li a:hover{
     var(--primarycolor),
     var(--secondarycolor),
     var(--primarycolor));
+}
+.about{
+    min-height: 100vh;
+    background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(images/back3.jpg) center/cover no-repeat fixed;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.about-left{
+    padding: 50px 20px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: var(--letterspacing);
+    transition: var(--maintransition);
+    margin: 0 auto;
+}
+.about-pic{
+    border: 10px solid var(--primarycolor);
+    border-radius: 10px;
+    overflow: hidden;
+    box-sizing: border-box;
+    width: fit-content;
+    margin: auto;
+    transition: var(--maintransition);
+}
+.about-pic:hover{
+    opacity: 0.6;
+    transform: scale(0.9);
+
+}
+@media screen and (min-width: 992px) {
+    .about {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .about-left {
+        float: none;
+        width: 50%;
+        text-align:right;
+        padding: 20rem 0;
+    }
 }
