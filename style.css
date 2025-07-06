@@ -37,6 +37,7 @@ li a{
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    font-family: var(--slantedtext);
 }
 li a:hover{
     background-color: #111;
@@ -54,6 +55,7 @@ li a:hover{
     border: 1px solid #258cbf;
     border-radius: 5px;
     font-size: 15px;
+    font-family: var(--slantedtext);
 }
 
 .search .fa-search {
@@ -77,7 +79,7 @@ p{
 }
 .banner{
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 10%;
     text-align: center;
     letter-spacing: var(--letterspacing);
@@ -86,6 +88,7 @@ p{
 .hone{
     color: var(--primarycolor);
     font-size: 3.5rem;
+    font-family: var(--slantedtext);
 }
 .htwo{
     color: var(--secondarycolor);
@@ -168,4 +171,44 @@ p{
         text-align:right;
         padding: 20rem 0;
     }
+}
+.sec-product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    gap: 40px;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(images/back2.jpg) center/cover no-repeat fixed;
+    text-transform: uppercase;
+    letter-spacing: var(--letterspacing);
+
+}
+.pro-left,
+.video {
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+.video video {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border: 5px solid var(--primarycolor);
+    border-radius: 10px;
+    box-sizing: border-box; 
+}
+@media screen and (min-width: 992px) {
+    .sec-product {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-around;
+        gap: 60px;
+    }
+
+    .pro-left {
+        text-align: left;
+        padding: 15rem 0 0 ;
+    } 
 }
